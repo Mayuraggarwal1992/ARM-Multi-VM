@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "domain":{
-            "value": "bank"
+            "value": "FIN"
         },
         "numberOfInstances": {
             "value": 2
           },
         "script": {
-            "value": "https://mustangadls.blob.core.windows.net/jobs/spot.ps1?sp=r&st=2021-02-18T06:49:56Z&se=2021-09-16T14:49:56Z&spr=https&sv=2020-02-10&sr=b&sig=g%2FxstA3QFvkJ9ZivEK9phM8AnZIvFXswWFGwADrcY7g%3D"
+            "value": "SAS Url"
           },
         "location": {
             "value": "eastus"
@@ -21,7 +21,7 @@
             "value": "default"
         },
         "virtualNetworkName": {
-            "value": "Bank-Demo-vnet"
+            "value": "Demo-vnet"
         },
         "addressPrefixes": {
             "value": [
