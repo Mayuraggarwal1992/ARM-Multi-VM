@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "domain":{
+            "value": "bank"
+        },
+        "numberOfInstances": {
+            "value": 2
+          },
+        "script": {
+            "value": "https://mustangadls.blob.core.windows.net/jobs/spot.ps1?sp=r&st=2021-02-18T06:49:56Z&se=2021-09-16T14:49:56Z&spr=https&sv=2020-02-10&sr=b&sig=g%2FxstA3QFvkJ9ZivEK9phM8AnZIvFXswWFGwADrcY7g%3D"
+          },
+        "location": {
+            "value": "eastus"
+        },
+        "enableAcceleratedNetworking": {
+            "value": true
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkName": {
+            "value": "Bank-Demo-vnet"
+        },
+        "addressPrefixes": {
+            "value": [
+                "172.24.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "default",
+                    "properties": {
+                        "addressPrefix": "172.24.1.0/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D4s_v3"
+        },
+        "adminUsername": {
+            "value": "ncr2021"
+        },
+        "adminPassword": {
+            "value": "NCR2021@123456"
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        }
+    }
+}
