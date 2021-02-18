@@ -1,5 +1,5 @@
 
-## For Deployment
+## For Deployment of MUltiple VM - Spot Instances
 
 az account set -s  ITS-APPOPS-TW-NUA01-QA
 
